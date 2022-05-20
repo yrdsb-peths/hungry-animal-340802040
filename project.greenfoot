@@ -1,11 +1,14 @@
 #Greenfoot project file
 class.Seahorse.image=seahorse.png
-editor.fx.0.height=739
+dependency1.from=MyWorld
+dependency1.to=Seahorse
+dependency1.type=UsesDependency
+editor.fx.0.height=737
 editor.fx.0.width=816
-editor.fx.0.x=531
-editor.fx.0.y=330
+editor.fx.0.x=768
+editor.fx.0.y=150
 height=1096
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=2
 project.charset=UTF-8
 publish.hasSource=false

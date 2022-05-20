@@ -5,6 +5,21 @@ public class Seahorse extends Actor
 
     public void act()
     {
-        move(1);
+        if(Greenfoot.isKeyDown("a"))
+        {
+            turn(-5);
+        }
+        else if(Greenfoot.isKeyDown("d"))
+        {
+            turn(5);
+        }
+        if(Greenfoot.isKeyDown("w"))
+        {
+            move(1);
+        }
+        else if(Greenfoot.isKeyDown("s"))
+        {
+            move(-1);
+        }
     }
 }
