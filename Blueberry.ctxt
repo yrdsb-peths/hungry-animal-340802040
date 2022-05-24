@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Blueberry
+comment0.text=\r\n\ Spawns\ a\ random\ blueberry\ in\ the\ world.\ Disappears\ when\ eaten.\r\n\ \r\n\ @Jonathan\ Zhao\r\n\ @Version\ 1\r\n
+comment1.params=
+comment1.target=void\ act()
+numComments=2

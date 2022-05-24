@@ -15,11 +15,25 @@ public class Seahorse extends Actor
         }
         if(Greenfoot.isKeyDown("w"))
         {
-            move(1);
+            move(2);
         }
         else if(Greenfoot.isKeyDown("s"))
         {
             move(-1);
         }
+        
+        eat();
+        
     }
+    
+    public void eat()
+    {
+        if(isTouching(Blueberry.class))
+        {
+            removeTouching(Blueberry.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createBlueberry();
+            world.increaseScore();
+        }
+    }    
 }
