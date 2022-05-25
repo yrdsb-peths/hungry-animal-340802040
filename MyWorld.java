@@ -40,6 +40,7 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        
     }
     
     public void createBlueberry()

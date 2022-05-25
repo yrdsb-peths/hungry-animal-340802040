@@ -12,6 +12,8 @@ public class Death extends Actor
      * Act - do whatever the Death wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    int speed = 1;
     public void act()
     {
         MyWorld world = (MyWorld) getWorld();
@@ -32,4 +34,6 @@ public class Death extends Actor
             world.removeObject(this);
         }
     }
+    
+
 }

@@ -15,11 +15,11 @@ public class Seahorse extends Actor
         }
         if(Greenfoot.isKeyDown("w"))
         {
-            move(2);
+            move(3);
         }
         else if(Greenfoot.isKeyDown("s"))
         {
-            move(-1);
+            move(-2);
         }
         
         eat();
