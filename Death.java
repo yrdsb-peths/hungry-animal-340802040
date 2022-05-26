@@ -25,7 +25,7 @@ public class Death extends Actor
             turnTowards(x, y);
         }
 
-        move(3);
+        move(MyWorld.level);
             
         if(isTouching(Seahorse.class))
         {

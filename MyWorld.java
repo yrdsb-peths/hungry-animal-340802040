@@ -10,7 +10,7 @@ public class MyWorld extends World
 {
     public int score = 0;
     Label scoreLabel;
-    
+    static int level = 1;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -28,6 +28,8 @@ public class MyWorld extends World
         
         createBlueberry();
         createDeath();
+        
+        resetStatic();
     }
     
     public void gameOver()
@@ -40,6 +42,11 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        if(score % 5 == 0)
+        {
+            level++;
+        }
+        
         
     }
     
@@ -49,6 +56,11 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(600);
         int y = Greenfoot.getRandomNumber(300);
         addObject(blueberry, x, y);
+    }
+    
+    public void resetStatic()
+    {
+        level = 1;
     }
     
     public void createDeath()
